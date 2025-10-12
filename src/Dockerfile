@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1
 FROM nginx:1.27-alpine
 
-# envsubst + rasterizačné nástroje pre generovanie assetov
-RUN apk add --no-cache gettext librsvg imagemagick
+# envsubst + ImageMagick (SVG rasterizácia s librsvg delegátom)
+RUN apk add --no-cache gettext imagemagick librsvg
 
 WORKDIR /usr/share/nginx/html
 
@@ -10,14 +10,14 @@ WORKDIR /usr/share/nginx/html
 COPY index.html ./
 COPY assets ./assets
 
-# Vygeneruj PNG exporty a favicon.ico z SVG
+# Vygeneruj PNG exporty a favicon.ico zo SVG pomocou ImageMagick
 RUN set -eux; \
-    rsvg-convert -w 512 -h 512 assets/logo-mark.svg > assets/logo-512.png; \
-    rsvg-convert -w 256 -h 256 assets/logo-mark.svg > assets/logo-256.png; \
-    rsvg-convert -w 128 -h 128 assets/logo-mark.svg > assets/logo-128.png; \
-    rsvg-convert -w 16 -h 16 assets/logo-mark.svg > /tmp/fav-16.png; \
-    rsvg-convert -w 32 -h 32 assets/logo-mark.svg > /tmp/fav-32.png; \
-    rsvg-convert -w 48 -h 48 assets/logo-mark.svg > /tmp/fav-48.png; \
+    convert -background none -density 512 assets/logo-mark.svg -resize 512x512 assets/logo-512.png; \
+    convert -background none -density 256 assets/logo-mark.svg -resize 256x256 assets/logo-256.png; \
+    convert -background none -density 128 assets/logo-mark.svg -resize 128x128 assets/logo-128.png; \
+    convert -background none -density 72  assets/logo-mark.svg -resize 16x16  /tmp/fav-16.png; \
+    convert -background none -density 72  assets/logo-mark.svg -resize 32x32  /tmp/fav-32.png; \
+    convert -background none -density 72  assets/logo-mark.svg -resize 48x48  /tmp/fav-48.png; \
     convert /tmp/fav-16.png /tmp/fav-32.png /tmp/fav-48.png assets/favicon.ico; \
     rm -f /tmp/fav-*.png
 
