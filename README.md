@@ -13,7 +13,7 @@ Struktúra
 - `src/assets/config.js.template` — runtime template pre `CONTACT_API_URL`
 - `src/assets/config.js` — default pre lokálne spustenie mimo kontajnera
 - `src/docker-entrypoint.sh` — generovanie `config.js` + spustenie Nginx
-- `src/Dockerfile` — obraz pre CI/CD
+- `src/Dockerfile` — obraz pre CI/CD (pri build-e vygeneruje PNG exporty `logo-512/256/128.png` a `favicon.ico`)
 
 Lokálne spustenie (Docker)
 1) Build:
@@ -31,3 +31,5 @@ CI/CD
 - Workflow `.github/workflows/build.yaml` už používa `./src/Dockerfile` a build context `./src`.
 - Publikovanie prebieha do Docker Hub na základe nastavených `secrets`.
 
+Branding
+- Pozrite `BRAND.md` pre farby, logá a odporúčania použitia.
