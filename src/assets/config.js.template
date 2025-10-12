@@ -1,0 +1,4 @@
+// Konfigurovateľný endpoint pre kontaktné údaje (nahrádza sa pri štarte kontajnera)
+// Ak premenná nie je definovaná, použije sa predvolená URL.
+window.CONTACT_API_URL = "${CONTACT_API_URL:-https://sw.tronic.sk/api/contact}";
+

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TRONIC — Kubernetes & GitOps experti</title>
+    <meta name="description" content="TRONIC: Experti na Kubernetes (RKE2), Argo CD, Argo Workflows a GitLab. Dizajn, implementácia, prevádzka a automatizácia pomocou GitOps.">
+    <link rel="canonical" href="https://tronic.sk/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tronic.sk/">
+    <meta property="og:title" content="TRONIC — Kubernetes & GitOps experti">
+    <meta property="og:description" content="Experti na Kubernetes (RKE2), Argo CD, Argo Workflows a GitLab.">
+    <meta property="og:site_name" content="TRONIC">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TRONIC — Kubernetes & GitOps experti">
+    <meta name="twitter:description" content="Experti na Kubernetes (RKE2), Argo CD, Argo Workflows a GitLab.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="TRONIC">
+          <img class="logo-mark" src="./assets/logo-mark.svg" alt="" aria-hidden="true" />
+          <img class="logo-wordmark" src="./assets/logo-wordmark.svg" alt="TRONIC" />
+        </div>
+        <nav class="nav">
+          <a href="#sluzby">Služby</a>
+          <a href="#technologie">Technológie</a>
+          <a href="#kontakt" class="btn btn-primary">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Experti na Kubernetes a GitOps</h1>
+            <p>
+              Navrhujeme, implementujeme a prevádzkujeme moderné IT platformy
+              na Kubernetes (RKE2) s GitOps prístupom pomocou
+              Argo CD, Argo Workflows a GitLab.
+            </p>
+            <div class="hero-cta">
+              <a href="#kontakt" class="btn btn-primary">Kontaktujte nás</a>
+              <a href="#technologie" class="btn btn-ghost">Zistiť viac</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sluzby" class="section">
+        <div class="container">
+          <h2>Čo pre vás urobíme</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card-icon" aria-hidden="true">⚙️</div>
+              <h3>Návrh a architektúra</h3>
+              <p>
+                Spoločne navrhneme bezpečnú, škálovateľnú a nákladovo efektívnu platformu
+                s dôrazom na jednoduchosť prevádzky a observabilitu.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon" aria-hidden="true">🚀</div>
+              <h3>Implementácia a automatizácia</h3>
+              <p>
+                Zavedíme GitOps, CI/CD a automatizované workflowy pre spoľahlivé a opakovateľné
+                nasadzovanie aplikácií.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon" aria-hidden="true">🛡️</div>
+              <h3>Prevádzka a bezpečnosť</h3>
+              <p>
+                Monitoring, alerting, hardening klastrov a zálohovanie — držíme SLA
+                a minimalizujeme riziká.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologie" class="section section-alt">
+        <div class="container">
+          <h2>Technológie, v ktorých sme doma</h2>
+          <div class="tech-grid">
+            <article class="tech">
+              <div class="tech-head">
+                <span class="badge">Kubernetes RKE2</span>
+                <h3>Enterprise Kubernetes, jednoducho a bezpečne</h3>
+              </div>
+              <p>
+                RKE2 prináša stabilitu a bezpečnosť pre produkčné klastre. Pomôžeme s návrhom,
+                inštaláciou, networkingom, HA kontrol-plane, storage (Rook/Ceph, Longhorn) aj upgrade procesom.
+              </p>
+              <ul>
+                <li>Hardening a CIS benchmarky</li>
+                <li>Observabilita: Prometheus/Grafana/Loki/Tempo</li>
+                <li>Bezpečnosť: RBAC, OPA/Gatekeeper, Secrets management</li>
+              </ul>
+            </article>
+
+            <article class="tech">
+              <div class="tech-head">
+                <span class="badge">Argo CD</span>
+                <h3>GitOps pre konzistentné nasadzovanie</h3>
+              </div>
+              <p>
+                Argo CD udržiava stav klastrov v súlade s repozitármi. Dizajn repozitárov,
+                multi-tenant politiky, templating (Helm/Kustomize) a promotion stratégie sú naša denná rutina.
+              </p>
+              <ul>
+                <li>Multi-cluster a multi-env stratégie</li>
+                <li>Policy-as-code, approval gates</li>
+                <li>Rollbacks a progressive delivery</li>
+              </ul>
+            </article>
+
+            <article class="tech">
+              <div class="tech-head">
+                <span class="badge">Argo Workflows</span>
+                <h3>Dátové a batch pipeline na Kubernetes</h3>
+              </div>
+              <p>
+                Modelujeme spoľahlivé workflowy s paralelizáciou, závislosťami a opakovateľnými
+                krokmami. Škálujeme s využitím spot/preemptible uzlov a cache.
+              </p>
+              <ul>
+                <li>Artifact/parameter passing, pod templates</li>
+                <li>Event-driven pipeline, sensors a triggers</li>
+                <li>Observabilita a retry/backoff stratégie</li>
+              </ul>
+            </article>
+
+            <article class="tech">
+              <div class="tech-head">
+                <span class="badge">GitLab</span>
+                <h3>End-to-end CI/CD a DevSecOps</h3>
+              </div>
+              <p>
+                Od návrhu pipeline po bezpečnostné skeny a deployment do Kubernetes.
+                Nastavíme runners, cache, artefakty aj release procesy.
+              </p>
+              <ul>
+                <li>Monorepo aj polyrepo stratégie</li>
+                <li>Security/Compliance integrácie</li>
+                <li>Infrastructure-as-code a release manažment</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section">
+        <div class="container">
+          <h2>Kontakt</h2>
+          <div id="contact" class="contact">
+            <div class="contact-loading">Načítavam kontaktné údaje…</div>
+          </div>
+          <p class="contact-note">
+            Kontaktné údaje sa načítavajú zo systému <a href="https://sw.tronic.sk" target="_blank" rel="noreferrer">sw.tronic.sk</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> TRONIC</div>
+        <div class="footer-links">
+          <a href="#sluzby">Služby</a>
+          <a href="#technologie">Technológie</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/config.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+  </html>

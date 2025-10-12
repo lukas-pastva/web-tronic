@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" role="img" aria-label="TRONIC wordmark (mono)">
+  <g fill="#0b1020">
+    <rect x="0" y="8" width="60" height="10" rx="5"/>
+    <rect x="24" y="18" width="12" height="38" rx="6"/>
+    <rect x="76" y="8" width="12" height="48" rx="6"/>
+    <rect x="76" y="8" width="40" height="12" rx="6"/>
+    <rect x="76" y="26" width="32" height="12" rx="6"/>
+    <polygon points="92,40 104,40 130,56 116,56"/>
+    <path d="M 180 8 a 24 24 0 1 1 0 48 a 24 24 0 1 1 0 -48 m 0 14 a 10 10 0 1 0 0 20 a 10 10 0 1 0 0 -20" fill-rule="evenodd"/>
+    <rect x="220" y="8" width="12" height="48" rx="6"/>
+    <rect x="262" y="8" width="12" height="48" rx="6"/>
+    <polygon points="232,8 244,8 274,56 262,56"/>
+    <rect x="292" y="8" width="12" height="48" rx="6"/>
+    <rect x="324" y="8" width="12" height="48" rx="6"/>
+    <rect x="336" y="8" width="36" height="12" rx="6"/>
+    <rect x="336" y="44" width="36" height="12" rx="6"/>
+  </g>
+</svg>
+
