@@ -28,11 +28,23 @@
           <img class="logo-mark" src="./assets/logo-mark.svg" alt="" aria-hidden="true" />
           <img class="logo-wordmark" src="./assets/logo-wordmark.svg" alt="TRONIC" />
         </div>
-        <nav class="nav">
-          <a href="#sluzby">Služby</a>
-          <a href="#technologie">Technológie</a>
-          <a href="#kontakt" class="btn btn-primary">Kontakt</a>
-        </nav>
+        <div class="header-right">
+          <nav class="nav">
+            <a href="#sluzby" data-i18n="navServices">Služby</a>
+            <a href="#technologie" data-i18n="navTechnologies">Technológie</a>
+            <a href="#kontakt" class="btn btn-primary" data-i18n="navContact">Kontakt</a>
+          </nav>
+          <div class="lang-switcher">
+            <button class="lang-btn" data-lang="sk" aria-label="Slovenčina">SK</button>
+            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+            <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+          </div>
+          <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -40,15 +52,15 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-text">
-            <h1>Experti na Kubernetes a GitOps</h1>
-            <p>
+            <h1 data-i18n="heroTitle">Experti na Kubernetes a GitOps</h1>
+            <p data-i18n="heroText">
               Navrhujeme, implementujeme a prevádzkujeme moderné IT platformy
               na Kubernetes (RKE2) s GitOps prístupom pomocou
               Argo CD, Argo Workflows a GitLab.
             </p>
             <div class="hero-cta">
-              <a href="#kontakt" class="btn btn-primary">Kontaktujte nás</a>
-              <a href="#technologie" class="btn btn-ghost">Zistiť viac</a>
+              <a href="#kontakt" class="btn btn-primary" data-i18n="heroCta">Kontaktujte nás</a>
+              <a href="#technologie" class="btn btn-ghost" data-i18n="heroLearnMore">Zistiť viac</a>
             </div>
           </div>
           <div class="hero-art" aria-hidden="true">
@@ -61,28 +73,41 @@
 
       <section id="sluzby" class="section">
         <div class="container">
-          <h2>Čo pre vás urobíme</h2>
+          <h2 data-i18n="servicesTitle">Čo pre vás urobíme</h2>
           <div class="cards">
             <div class="card">
-              <div class="card-icon" aria-hidden="true">⚙️</div>
-              <h3>Návrh a architektúra</h3>
-              <p>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <h3 data-i18n="service1Title">Návrh a architektúra</h3>
+              <p data-i18n="service1Text">
                 Spoločne navrhneme bezpečnú, škálovateľnú a nákladovo efektívnu platformu
                 s dôrazom na jednoduchosť prevádzky a observabilitu.
               </p>
             </div>
             <div class="card">
-              <div class="card-icon" aria-hidden="true">🚀</div>
-              <h3>Implementácia a automatizácia</h3>
-              <p>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 data-i18n="service2Title">Implementácia a automatizácia</h3>
+              <p data-i18n="service2Text">
                 Zavedíme GitOps, CI/CD a automatizované workflowy pre spoľahlivé a opakovateľné
                 nasadzovanie aplikácií.
               </p>
             </div>
             <div class="card">
-              <div class="card-icon" aria-hidden="true">🛡️</div>
-              <h3>Prevádzka a bezpečnosť</h3>
-              <p>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 data-i18n="service3Title">Prevádzka a bezpečnosť</h3>
+              <p data-i18n="service3Text">
                 Monitoring, alerting, hardening klastrov a zálohovanie — držíme SLA
                 a minimalizujeme riziká.
               </p>
@@ -93,69 +118,69 @@
 
       <section id="technologie" class="section section-alt">
         <div class="container">
-          <h2>Technológie, v ktorých sme doma</h2>
+          <h2 data-i18n="techTitle">Technológie, v ktorých sme doma</h2>
           <div class="tech-grid">
             <article class="tech">
               <div class="tech-head">
-                <span class="badge">Kubernetes RKE2</span>
-                <h3>Enterprise Kubernetes, jednoducho a bezpečne</h3>
+                <span class="badge" data-i18n="tech1Badge">Kubernetes RKE2</span>
+                <h3 data-i18n="tech1Title">Enterprise Kubernetes, jednoducho a bezpečne</h3>
               </div>
-              <p>
+              <p data-i18n="tech1Text">
                 RKE2 prináša stabilitu a bezpečnosť pre produkčné klastre. Pomôžeme s návrhom,
                 inštaláciou, networkingom, HA kontrol-plane, storage (Rook/Ceph, Longhorn) aj upgrade procesom.
               </p>
               <ul>
-                <li>Hardening a CIS benchmarky</li>
-                <li>Observabilita: Prometheus/Grafana/Loki/Tempo</li>
-                <li>Bezpečnosť: RBAC, OPA/Gatekeeper, Secrets management</li>
+                <li data-i18n="tech1Li1">Hardening a CIS benchmarky</li>
+                <li data-i18n="tech1Li2">Observabilita: Prometheus/Grafana/Loki/Tempo</li>
+                <li data-i18n="tech1Li3">Bezpečnosť: RBAC, OPA/Gatekeeper, Secrets management</li>
               </ul>
             </article>
 
             <article class="tech">
               <div class="tech-head">
-                <span class="badge">Argo CD</span>
-                <h3>GitOps pre konzistentné nasadzovanie</h3>
+                <span class="badge" data-i18n="tech2Badge">Argo CD</span>
+                <h3 data-i18n="tech2Title">GitOps pre konzistentné nasadzovanie</h3>
               </div>
-              <p>
+              <p data-i18n="tech2Text">
                 Argo CD udržiava stav klastrov v súlade s repozitármi. Dizajn repozitárov,
                 multi-tenant politiky, templating (Helm/Kustomize) a promotion stratégie sú naša denná rutina.
               </p>
               <ul>
-                <li>Multi-cluster a multi-env stratégie</li>
-                <li>Policy-as-code, approval gates</li>
-                <li>Rollbacks a progressive delivery</li>
+                <li data-i18n="tech2Li1">Multi-cluster a multi-env stratégie</li>
+                <li data-i18n="tech2Li2">Policy-as-code, approval gates</li>
+                <li data-i18n="tech2Li3">Rollbacks a progressive delivery</li>
               </ul>
             </article>
 
             <article class="tech">
               <div class="tech-head">
-                <span class="badge">Argo Workflows</span>
-                <h3>Dátové a batch pipeline na Kubernetes</h3>
+                <span class="badge" data-i18n="tech3Badge">Argo Workflows</span>
+                <h3 data-i18n="tech3Title">Dátové a batch pipeline na Kubernetes</h3>
               </div>
-              <p>
+              <p data-i18n="tech3Text">
                 Modelujeme spoľahlivé workflowy s paralelizáciou, závislosťami a opakovateľnými
                 krokmami. Škálujeme s využitím spot/preemptible uzlov a cache.
               </p>
               <ul>
-                <li>Artifact/parameter passing, pod templates</li>
-                <li>Event-driven pipeline, sensors a triggers</li>
-                <li>Observabilita a retry/backoff stratégie</li>
+                <li data-i18n="tech3Li1">Artifact/parameter passing, pod templates</li>
+                <li data-i18n="tech3Li2">Event-driven pipeline, sensors a triggers</li>
+                <li data-i18n="tech3Li3">Observabilita a retry/backoff stratégie</li>
               </ul>
             </article>
 
             <article class="tech">
               <div class="tech-head">
-                <span class="badge">GitLab</span>
-                <h3>End-to-end CI/CD a DevSecOps</h3>
+                <span class="badge" data-i18n="tech4Badge">GitLab</span>
+                <h3 data-i18n="tech4Title">End-to-end CI/CD a DevSecOps</h3>
               </div>
-              <p>
+              <p data-i18n="tech4Text">
                 Od návrhu pipeline po bezpečnostné skeny a deployment do Kubernetes.
                 Nastavíme runners, cache, artefakty aj release procesy.
               </p>
               <ul>
-                <li>Monorepo aj polyrepo stratégie</li>
-                <li>Security/Compliance integrácie</li>
-                <li>Infrastructure-as-code a release manažment</li>
+                <li data-i18n="tech4Li1">Monorepo aj polyrepo stratégie</li>
+                <li data-i18n="tech4Li2">Security/Compliance integrácie</li>
+                <li data-i18n="tech4Li3">Infrastructure-as-code a release manažment</li>
               </ul>
             </article>
           </div>
@@ -164,16 +189,16 @@
 
       <section id="kontakt" class="section">
         <div class="container">
-          <h2>Kontakt</h2>
+          <h2 data-i18n="contactTitle">Kontakt</h2>
           <div id="contact-static" class="contact">
-            <div class="row"><div class="label">Adresa</div><div class="value">Lombardiniho 10735/22B, Bratislava - mestská časť Nové Mesto 831 03</div></div>
-            <div class="row"><div class="label">Telefón</div><div class="value"><a href="tel:+421917744049">+421 917 744 049</a></div></div>
-            <div class="row"><div class="label">E‑mail</div><div class="value"><a href="mailto:info@lukaspastva.sk">info@lukaspastva.sk</a></div></div>
-            <div class="row"><div class="label">IČO</div><div class="value">55 391 028</div></div>
-            <div class="row"><div class="label">DIČ</div><div class="value">2121975361</div></div>
-            <div class="row"><div class="label">IČ DPH</div><div class="value">SK21 219 753 61</div></div>
-            <div class="row"><div class="label">Bankový účet</div><div class="value">SK37 1111 0000 0017 9420 0008</div></div>
-            <div class="row"><div class="label">BIC (SWIFT)</div><div class="value">UNCRSKBX</div></div>
+            <div class="row"><div class="label" data-label-key="labelAddress">Adresa</div><div class="value">Lombardiniho 10735/22B, Bratislava - mestská časť Nové Mesto 831 03</div></div>
+            <div class="row"><div class="label" data-label-key="labelPhone">Telefón</div><div class="value"><a href="tel:+421917744049">+421 917 744 049</a></div></div>
+            <div class="row"><div class="label" data-label-key="labelEmail">E-mail</div><div class="value"><a href="mailto:info@lukaspastva.sk">info@lukaspastva.sk</a></div></div>
+            <div class="row"><div class="label" data-label-key="labelIco">IČO</div><div class="value">55 391 028</div></div>
+            <div class="row"><div class="label" data-label-key="labelDic">DIČ</div><div class="value">2121975361</div></div>
+            <div class="row"><div class="label" data-label-key="labelVat">IČ DPH</div><div class="value">SK21 219 753 61</div></div>
+            <div class="row"><div class="label" data-label-key="labelBank">Bankový účet</div><div class="value">SK37 1111 0000 0017 9420 0008</div></div>
+            <div class="row"><div class="label" data-label-key="labelSwift">BIC (SWIFT)</div><div class="value">UNCRSKBX</div></div>
           </div>
         </div>
       </section>
@@ -181,16 +206,17 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div>© <span id="year"></span> TRONIC</div>
+        <div>© <span id="year"></span> <span data-i18n="footerCopyright">TRONIC</span></div>
         <div class="footer-links">
-          <a href="#sluzby">Služby</a>
-          <a href="#technologie">Technológie</a>
-          <a href="#kontakt">Kontakt</a>
+          <a href="#sluzby" data-i18n="navServices">Služby</a>
+          <a href="#technologie" data-i18n="navTechnologies">Technológie</a>
+          <a href="#kontakt" data-i18n="navContact">Kontakt</a>
         </div>
       </div>
     </footer>
 
     <script src="./assets/config.js"></script>
+    <script src="./assets/translations.js"></script>
     <script src="./assets/app.js"></script>
   </body>
   </html>
