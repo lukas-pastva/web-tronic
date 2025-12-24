@@ -1,36 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" role="img" aria-label="TRONIC wordmark" shape-rendering="geometricPrecision">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 56" role="img" aria-label="TRONIC">
   <defs>
-    <!-- Use a userSpaceOnUse gradient so the color sweep spans the entire word uniformly -->
-    <linearGradient id="g" x1="0" y1="0" x2="400" y2="80" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1aa3ff"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
   </defs>
-  <g fill="url(#g)">
+  <g fill="url(#grad)">
     <!-- T -->
-    <rect x="0" y="8" width="60" height="10" rx="5"/>
-    <rect x="24" y="18" width="12" height="38" rx="6"/>
+    <path d="M0 4h44v8H26v40h-8V12H0V4z"/>
 
-    <!-- R (fix: connect leg to the stem) -->
-    <rect x="76" y="8" width="12" height="48" rx="6"/>
-    <rect x="76" y="8" width="40" height="12" rx="6"/>
-    <rect x="76" y="26" width="32" height="12" rx="6"/>
-    <polygon points="88,40 104,40 130,56 114,56"/>
+    <!-- R -->
+    <path d="M56 4h30c9 0 15 6 15 14s-6 14-15 14H64v20h-8V4zm8 8v12h22c4 0 7-3 7-6s-3-6-7-6H64z"/>
+    <path d="M82 32l20 20h-10l-20-20h10z"/>
 
     <!-- O -->
-    <path d="M 180 8 a 24 24 0 1 1 0 48 a 24 24 0 1 1 0 -48 m 0 14 a 10 10 0 1 0 0 20 a 10 10 0 1 0 0 -20" fill-rule="evenodd"/>
+    <path d="M132 4c15 0 24 11 24 24s-9 24-24 24-24-11-24-24 9-24 24-24zm0 8c-9 0-16 7-16 16s7 16 16 16 16-7 16-16-7-16-16-16z"/>
 
-    <!-- N -->
-    <rect x="220" y="8" width="12" height="48" rx="6"/>
-    <rect x="262" y="8" width="12" height="48" rx="6"/>
-    <polygon points="232,8 244,8 274,56 262,56"/>
+    <!-- N - fixed direction -->
+    <path d="M168 4h8l28 38V4h8v48h-8l-28-38v38h-8V4z"/>
 
     <!-- I -->
-    <rect x="292" y="8" width="12" height="48" rx="6"/>
+    <path d="M228 4h8v48h-8V4z"/>
 
-    <!-- C -->
-    <rect x="324" y="8" width="12" height="48" rx="6"/>
-    <rect x="336" y="8" width="36" height="12" rx="6"/>
-    <rect x="336" y="44" width="36" height="12" rx="6"/>
+    <!-- C - clearly open on right -->
+    <path d="M292 4c13 0 22 8 24 18h-9c-2-6-8-10-15-10-10 0-17 7-17 16s7 16 17 16c7 0 13-4 15-10h9c-2 10-11 18-24 18-15 0-26-11-26-24s11-24 26-24z"/>
   </g>
 </svg>
