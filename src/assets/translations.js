@@ -69,8 +69,6 @@ window.TRANSLATIONS = {
     labelIco: "IČO",
     labelDic: "DIČ",
     labelVat: "IČ DPH",
-    labelBank: "Bankový účet",
-    labelSwift: "BIC (SWIFT)",
     labelCompany: "Spoločnosť",
     labelWeb: "Web",
 
@@ -150,8 +148,6 @@ window.TRANSLATIONS = {
     labelIco: "Company ID",
     labelDic: "Tax ID",
     labelVat: "VAT ID",
-    labelBank: "Bank Account",
-    labelSwift: "BIC (SWIFT)",
     labelCompany: "Company",
     labelWeb: "Web",
 
@@ -231,8 +227,6 @@ window.TRANSLATIONS = {
     labelIco: "ID Empresa",
     labelDic: "ID Fiscal",
     labelVat: "NIF/IVA",
-    labelBank: "Cuenta Bancaria",
-    labelSwift: "BIC (SWIFT)",
     labelCompany: "Empresa",
     labelWeb: "Web",
 

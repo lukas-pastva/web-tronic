@@ -93,11 +93,7 @@
       'ID Fiscal': 'labelDic',
       'IČ DPH': 'labelVat',
       'VAT ID': 'labelVat',
-      'NIF/IVA': 'labelVat',
-      'Bankový účet': 'labelBank',
-      'Bank Account': 'labelBank',
-      'Cuenta Bancaria': 'labelBank',
-      'BIC (SWIFT)': 'labelSwift'
+      'NIF/IVA': 'labelVat'
     };
 
     contactStatic.querySelectorAll('.label').forEach(labelEl => {
